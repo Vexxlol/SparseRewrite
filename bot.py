@@ -7,7 +7,7 @@ client = commands.Bot(command_prefix="!", description="Bug Scratch Bot, rewritte
 bang()
 @client.event
 async def on_ready():
-    print(f"[Client] {client.user.name} has connected to the discord gateway.")
+    print(f"[Client] {client.user.name} has connected to the discord API.")
     try:
         client.load_extension('cogs.misc')
         client.load_extension('cogs.fun')
