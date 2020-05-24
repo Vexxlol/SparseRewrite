@@ -10,7 +10,7 @@ class Misc(commands.Cog):
         """
         sends the bot latency
         """
-        await ctx.send(f"{round(self.bot.latency * 1000)}ms")
+        await ctx.send(f"🏓 **Pong!** {round(self.bot.latency * 1000)}ms")
         
 def setup(bot):
     bot.add_cog(Misc(bot))
