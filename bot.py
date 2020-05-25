@@ -1,17 +1,15 @@
-from discord.ext import commands
 import sys, os
 from misc.injectENV import bang
-import glob
+from SparseClient import client as c
 
-client = commands.Bot(command_prefix="-", description="Sparse, rewritten in python for better functionality")
-bang()
-@client.event
-async def on_ready():
-    print(f"[Client] {client.user.name} has connected to the discord API.")
-    try:
-        client.load_extension('cogs.misc')
-        client.load_extension('cogs.fun')
-    except Exception as e:
-        print(e)
+def run():
+    bang()
+    client = c.SparseClient(prefix="-", token=os.getenv("token"), commandDirs="cogs")
+    client.loadCog("misc")
+    client.loadCog("fun")
+    # TODO: WORK ON MODERATION COG
+    #client.loadCog("moderation")
+    client.connect()
 
-client.run(os.getenv('token'))
+run()
+
