@@ -3,7 +3,7 @@ import sys, os
 from misc.injectENV import bang
 import glob
 
-client = commands.Bot(command_prefix="!", description="Bug Scratch Bot, rewritten in python")
+client = commands.Bot(command_prefix="-", description="Sparse, rewritten in python for better functionality")
 bang()
 @client.event
 async def on_ready():
