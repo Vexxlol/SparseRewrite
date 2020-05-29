@@ -27,5 +27,5 @@ Windows
 **Please Note! NOT all packages are included! find them yourself, this isnt a bot for you to copy paste**
 
 **Copyright 2019 © sparse Group Pty Ltd.**
-**Abn: 31530122176**
+
 
