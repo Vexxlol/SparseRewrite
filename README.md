@@ -24,8 +24,8 @@ Linux/macOS
 Windows
 `py -3 -m pip install -U discord.py`
 
-**Please Note! NOT all packages are included! find them yourself, this isnt a bot for you to copy paste
+**Please Note! NOT all packages are included! find them yourself, this isnt a bot for you to copy paste**
 
-**Copyright 2019 © sparse Group Pty Ltd. 
-**Abn: 31530122176 
+**Copyright 2019 © sparse Group Pty Ltd.**
+**Abn: 31530122176**
 
